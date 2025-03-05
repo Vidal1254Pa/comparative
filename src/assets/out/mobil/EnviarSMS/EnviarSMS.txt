@@ -1,0 +1,14 @@
+new()
+{
+    Input="/EnviarSMS",
+    To="/api/EnviarSMS",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

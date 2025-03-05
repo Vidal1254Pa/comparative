@@ -1,0 +1,14 @@
+new()
+{
+    Input="/BancaMovil/ListarOperacionesFrecuentes",
+    To="/api/Admin/ListarOperacionesFrecuentes",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

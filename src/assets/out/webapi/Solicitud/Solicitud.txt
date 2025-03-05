@@ -1,0 +1,157 @@
+new()
+{
+    Input="/Solicitud/ConsultarTpoProdCred",
+    To="/api/Solicitud/ConsultarTpoProdCred",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/ConstanciaRegistroDesafilDebitoAut",
+    To="/api/Solicitud/ConstanciaRegistroDesafilDebitoAut",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/ListarRegistroDebitoAut",
+    To="/api/Solicitud/ListarRegistroDebitoAut",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/RegDesafilDebitoAutomatico",
+    To="/api/Solicitud/RegDesafilDebitoAutomatico",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/ConsultarDetalleTpoProdCred",
+    To="/api/Solicitud/ConsultarDetalleTpoProdCred",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/RegistrarSolicitudCredito",
+    To="/api/Solicitud/RegistrarSolicitudCredito",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/ConstanciaRegistroCredSolicitud",
+    To="/api/Solicitud/ConstanciaRegistroCredSolicitud",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/SeguimientoRegistroCredSolicitud",
+    To="/api/Solicitud/SeguimientoRegistroCredSolicitud",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/ListarCondicionesCancelacionSeguros",
+    To="/api/Solicitud/ListarCondicionesCancelacionSeguros",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/ResumenCancelacionPlazoFijo",
+    To="/api/Solicitud/ResumenCancelacionPlazoFijo",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/ConsultarReclamo",
+    To="/api/Solicitud/ConsultarReclamo",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Solicitud/ListarReclamos",
+    To="/api/Solicitud/ListarReclamos",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

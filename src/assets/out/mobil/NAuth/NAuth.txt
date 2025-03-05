@@ -1,0 +1,9 @@
+new()
+{
+    Input="/NAuth/RegistraOlvideContrasena",
+    To="/api/Auth/RegistraOlvideContrasena",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+}

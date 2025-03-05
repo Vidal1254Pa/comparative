@@ -1,0 +1,14 @@
+new()
+{
+    Input="/ListarConstanteSimAhorro",
+    To="/api/SimAhorro/ListarConstanteSimAhorro",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

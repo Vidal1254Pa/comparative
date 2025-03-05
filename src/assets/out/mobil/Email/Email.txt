@@ -1,0 +1,35 @@
+new()
+{
+    Input="/Email/GetDoc",
+    To="/api/Email/GetDoc",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    
+    
+    
+},new()
+{
+    Input="/Email/EnviarEmail",
+    To="/api/Email/EnviarEmail",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Email/EnviarConstanciaTokenAgencia",
+    To="/api/Email/EnviarConstanciaTokenAgencia",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

@@ -1,0 +1,118 @@
+new()
+{
+    Input="/PagoCreditoBW/ConfirmacionPagoCreditosPropio",
+    To="/api/PagoCreditoBM/ConfirmacionPagoCreditosPropio",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBW/ConfirmacionPagoCreditosTercero",
+    To="/api/PagoCreditoBM/ConfirmacionPagoCreditosTercero",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBW/GetDetalleCuotaPendiente",
+    To="/api/PagoCreditoBM/GetDetalleCuotaPendiente",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBW/PagoCuotaCreditosotros",
+    To="/api/PagoCreditoBM/PagoCuotaCreditosotros",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBW/PagoCuotaCreditosPropios",
+    To="/api/PagoCreditoBM/PagoCuotaCreditosPropios",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBW/ListarConstanciaPagoCredito",
+    To="/api/PagoCreditoBM/ListarConstanciaPagoCredito",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBW/ConsultarDeudaPrendario",
+    To="/api/PagoCreditoBM/ConsultarDeudaPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBW/RenovarCreditoPrendario",
+    To="/api/PagoCreditoBM/RenovarCreditoPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBW/ConstanciaRenovacionPrendario",
+    To="/api/PagoCreditoBM/ConstanciaRenovacionPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

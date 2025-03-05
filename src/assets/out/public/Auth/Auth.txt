@@ -1,0 +1,22 @@
+new()
+{
+    Input="/Auth/ValidaIngreso",
+    To="/api/Auth/ValidaIngreso",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Auth/VerificarPin",
+    To="/api/Auth/VerificarPin",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    
+    
+    
+}

@@ -1,0 +1,14 @@
+new()
+{
+    Input="/Operador/RegistrarSolicitud",
+    To="/api/Operador/RegistrarSolicitud",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

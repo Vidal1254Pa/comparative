@@ -1,0 +1,92 @@
+new()
+{
+    Input="/PagoCreditoBM/GetDetalleCuotaPendiente",
+    To="/api/PagoCreditoBM/GetDetalleCuotaPendiente",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBM/PagoCuotaCreditosotros",
+    To="/api/PagoCreditoBM/PagoCuotaCreditosotros",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBM/PagoCuotaCreditosPropios",
+    To="/api/PagoCreditoBM/PagoCuotaCreditosPropios",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBM/ListarConstanciaPagoCredito",
+    To="/api/PagoCreditoBM/ListarConstanciaPagoCredito",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBM/ConsultarDeudaPrendario",
+    To="/api/PagoCreditoBM/ConsultarDeudaPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBM/RenovarCreditoPrendario",
+    To="/api/PagoCreditoBM/RenovarCreditoPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoCreditoBM/ConstanciaRenovacionPrendario",
+    To="/api/PagoCreditoBM/ConstanciaRenovacionPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

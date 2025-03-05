@@ -1,0 +1,9 @@
+new()
+{
+    Input="/CredencialesTransaccionCredito",
+    To="/PagoVisa/CredencialesTransaccionCredito",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    
+    
+    
+}

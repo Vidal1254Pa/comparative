@@ -1,0 +1,40 @@
+new()
+{
+    Input="/PagoProveedor/PagoProveedorIngresarDatos",
+    To="/api/PagoProveedor/PagoProveedorIngresarDatos",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoProveedor/VerArchivoPagoProveedor",
+    To="/api/PagoProveedor/VerArchivoPagoProveedor",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.PUT}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoProveedor/ConfirmarPagoProveedor",
+    To="/api/PagoProveedor/ConfirmarPagoProveedor",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.PUT}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

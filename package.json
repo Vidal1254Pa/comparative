@@ -10,11 +10,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/lodash": "^4.17.16",
     "@types/node": "^22.13.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "json-parse-even-better-errors": "^4.0.0"
+    "json-parse-even-better-errors": "^4.0.0",
+    "lodash": "^4.17.21"
   }
 }

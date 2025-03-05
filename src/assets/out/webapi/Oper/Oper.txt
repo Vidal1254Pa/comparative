@@ -1,0 +1,14 @@
+new()
+{
+    Input="/Oper/VerPerfil",
+    To="/api/Admin/VerPerfil",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

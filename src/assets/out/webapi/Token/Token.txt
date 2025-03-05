@@ -1,0 +1,103 @@
+new()
+{
+    Input="/Token/CheckAfiliado",
+    To="/api/Token/CheckAfiliado",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Token/2FA",
+    To="/api/Token/2FA",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Token/GenerarOTP",
+    To="/api/Token/GenerarOTP",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Token/AfiliarTokenDigital",
+    To="/api/Token/AfiliarTokenDigital",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+},new()
+{
+    Input="/Token/RegOpeTokenDigital",
+    To="/api/Token/RegOpeTokenDigital",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Token/UpdTokenDigDes",
+    To="/api/Token/UpdTokenDigDes",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.PUT}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Token/UpdTokenDigAct",
+    To="/api/Token/UpdTokenDigAct",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.PUT}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Token/GuardarSMS",
+    To="/api/Token/GuardarSMS",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+},new()
+{
+    Input="/Token/ConfirmarSMS",
+    To="/api/Token/ConfirmarSMS",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+}

@@ -1,0 +1,79 @@
+new()
+{
+    Input="/Microseguro/ConsultarConstantesSeguros",
+    To="/api/Microseguro/ConsultarConstantesSeguros",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Microseguro/ConsultarMontoPrimaSeguros",
+    To="/api/Microseguro/ConsultarMontoPrimaSeguros",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Microseguro/RegistraSolAfiliacionSepelio",
+    To="/api/Microseguro/RegistraSolAfiliacionSepelio",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Microseguro/ConstanciaRegistroSegSepelio",
+    To="/api/Microseguro/ConstanciaRegistroSegSepelio",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Microseguro/RegistraSolAfiliacionTarjeta",
+    To="/api/Microseguro/RegistraSolAfiliacionTarjeta",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Microseguro/ConstanciaRegistroTarjeta",
+    To="/api/Microseguro/ConstanciaRegistroTarjeta",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

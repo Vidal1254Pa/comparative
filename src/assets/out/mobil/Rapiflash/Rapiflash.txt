@@ -1,0 +1,79 @@
+new()
+{
+    Input="/Rapiflash/ConsultarGarantiasPlazoFijo",
+    To="/api/Rapiflash/ConsultarGarantiasPlazoFijo",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Rapiflash/ConsultarFechasDePago",
+    To="/api/Rapiflash/ConsultarFechasDePago",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Rapiflash/ConsultarDetalleProductoRapiflash",
+    To="/api/Rapiflash/ConsultarDetalleProductoRapiflash",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Rapiflash/ConsultarDetallePrevioRapiflash",
+    To="/api/Rapiflash/ConsultarDetallePrevioRapiflash",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Rapiflash/ConstanciaCreditoRapiflash",
+    To="/api/Rapiflash/ConstanciaCreditoRapiflash",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Rapiflash/RegistrarCreditoRapiflash",
+    To="/api/Rapiflash/RegistrarCreditoRapiflash",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

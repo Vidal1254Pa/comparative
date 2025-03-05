@@ -1,0 +1,14 @@
+new()
+{
+    Input="/Product/ConsultMisMovimPend",
+    To="/api/Product/ConsultMisMovimPend",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

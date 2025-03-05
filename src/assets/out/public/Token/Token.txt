@@ -1,0 +1,48 @@
+new()
+{
+    Input="/Token/Login",
+    To="/api/Login/Login",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET,Method.POST,Method.PUT}),
+    
+    
+    
+},new()
+{
+    Input="/Token/2FA",
+    To="/api/Token/2FA",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Token/CheckAfiliado",
+    To="/api/Token/CheckAfiliado",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Token/GenerarOTP",
+    To="/api/Token/GenerarOTP",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

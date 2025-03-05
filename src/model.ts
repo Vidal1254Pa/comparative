@@ -15,6 +15,7 @@ export interface Route {
   DownstreamHostAndPorts: DownstreamHostAndPort[];
   AuthenticationOptions?: AuthenticationOptions;
   RouteClaimsRequirement?: RouteClaimsRequirement;
+  category?:string
 }
 
 interface RouteClaimsRequirement {

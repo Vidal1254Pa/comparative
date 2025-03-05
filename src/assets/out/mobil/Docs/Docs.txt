@@ -1,0 +1,9 @@
+new()
+{
+    Input="/Docs/maynasdoc",
+    To="/api/Docs/maynasdoc",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    
+    
+    
+}

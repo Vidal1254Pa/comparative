@@ -9,13 +9,21 @@ export default function ParserOcelot(item: Route) {
       item.UpstreamHttpMethod
     )}}),
     ${item.AuthenticationOptions != undefined ? "AuthIsRequired=true," : ""}
-    ${item.RouteClaimsRequirement != undefined ? "HasProtectedMetadata=true," : ""}
-    ${item.RouteClaimsRequirement != undefined ? `
+    ${
+      item.RouteClaimsRequirement != undefined
+        ? "HasProtectedMetadata=true,"
+        : ""
+    }
+    ${
+      item.RouteClaimsRequirement != undefined
+        ? `
     ProtectedMetadataValue =
     {
         {"UserData", "${item.RouteClaimsRequirement.UserData}"}
     }
-    ` : ""}
+    `
+        : ""
+    }
 }`;
 }
 
@@ -34,4 +42,11 @@ function GetMethodName(method: string[]) {
       }
     })
     .join(",");
+}
+
+export function AddProperty(item: Route, cat: string): Route {
+  return {
+    ...item,
+    category: cat,
+  };
 }

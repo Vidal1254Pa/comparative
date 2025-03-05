@@ -1,0 +1,14 @@
+new()
+{
+    Input="/SolicitaAhorro",
+    To="/api/SolicitaAhorro",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

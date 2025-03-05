@@ -1,0 +1,9 @@
+new()
+{
+    Input="/RespuestaVisa",
+    To="/PagoVisa/RespuestaVisa",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+}

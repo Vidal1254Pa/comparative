@@ -1,0 +1,14 @@
+new()
+{
+    Input="/CalcularsimuladorCredito",
+    To="/api/SimAhorro/CalcularsimuladorCredito",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

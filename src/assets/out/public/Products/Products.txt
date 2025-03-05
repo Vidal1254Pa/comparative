@@ -1,0 +1,27 @@
+new()
+{
+    Input="/Products/Actualizacion/ListarOperador",
+    To="/api/PagoWeb/Carrera/ListarConstantesPagoWeb",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Products/Solicitud/ListarMotivosCancelacion",
+    To="/api/PagoWeb/Carrera/ListarConstantesPagoWeb",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

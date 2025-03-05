@@ -1,0 +1,120 @@
+new()
+{
+    Input="/Auth/ValidaIngreso",
+    To="/api/Auth/ValidaIngreso",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/ObtnerLLaveBIE",
+    To="/api/Auth/ObtnerLLaveBIE",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/AfiliaBancaWeb",
+    To="/api/Auth/AfiliaBancaMovil",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/ListarConstAfiliaBancaWeb",
+    To="/api/Auth/ListarConstAfiliaBancaMovil",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/RegistraOlvideContrasena",
+    To="/api/Auth/RegistraOlvideContrasena",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/ListarDatosPerfil",
+    To="/api/Auth/ListarDatosPerfil",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/RegistraOlvideContraseña",
+    To="/api/Auth/RegistraOlvideContraseña",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Auth/ValidaIngresoBancaWebEmpresa",
+    To="/api/Auth/ValidaIngresoBancaWebEmpresa",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/ObtenerKeyRegistraOlvContBIE",
+    To="/api/Auth/ObtenerKeyRegistraOlvContBIE",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/ConsultarUltimaSesionBIE",
+    To="/api/Auth/ConsultarUltimaSesionBIE",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Auth/RegistraCambiarContrasenaBW",
+    To="/api/Auth/RegistraCambiarContrasenaBW",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    
+    
+    
+},new()
+{
+    Input="/Auth/RegistraCambiarContrasenaBIE",
+    To="/api/Auth/RegistraCambiarContrasenaBIE",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Auth/ConstanciaCambioClaveBW",
+    To="/api/Auth/ConstanciaCambioClaveBW",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    
+    
+    
+}

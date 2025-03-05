@@ -1,0 +1,14 @@
+new()
+{
+    Input="/MostarTEADiasITF",
+    To="/api/SimAhorro/MostarTEADiasITF",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

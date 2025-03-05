@@ -1,10 +1,10 @@
 import fs from "fs";
 import path from "path";
-import { RootObject, Route } from "./model";
+import { RootObject } from "./model";
 import ParserOcelot from "./parser.ocelot";
 const parse = require("json-parse-even-better-errors");
-const arrayContentGroups: Route[] = [];
-[("mobil", "public", "webapi")].map((dir) => {
+
+["mobil","public","webapi"].map((dir) => {
   try {
     console.log(dir);
     const jsonRead = fs.readFileSync(
@@ -22,18 +22,12 @@ const arrayContentGroups: Route[] = [];
         dataGroups[group].push(ParserOcelot(item));
       }
     }).join(",");
-    Object.keys(dataGroups).map((key) => {
-      if (
-        !fs.existsSync(path.join(__dirname, `../src/assets/out/${dir}/${key}`))
-      ) {
-        fs.mkdirSync(path.join(__dirname, `../src/assets/out/${dir}`, key));
-      }
-      fs.appendFileSync(
-        path.join(__dirname, `../src/assets/out/${dir}/${key}/${key}.txt`),
-        dataGroups[key].join(","),
-        "utf-8"
-      );
-    });
+    Object.keys(dataGroups).map(key=>{
+        if(!fs.existsSync(path.join(__dirname,`../src/assets/out/${dir}/${key}`))){
+            fs.mkdirSync(path.join(__dirname,`../src/assets/out/${dir}`,key))
+        }
+        fs.appendFileSync(path.join(__dirname,`../src/assets/out/${dir}/${key}/${key}.txt`),dataGroups[key].join(","),"utf-8")
+    })
   } catch (e) {
     console.log(e);
   }

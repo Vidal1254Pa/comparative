@@ -1,0 +1,40 @@
+new()
+{
+    Input="/PagoPlanilla/PagoPlanillaIngresarDatos",
+    To="/api/PagoPlanilla/PagoPlanillaIngresarDatos",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoPlanilla/VerArchivoPagoPlanillaTrabajador",
+    To="/api/PagoPlanilla/VerArchivoPagoPlanillaTrabajador",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.PUT}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/PagoPlanilla/ConfirmarPagoPlanilla",
+    To="/api/PagoPlanilla/ConfirmarPagoPlanilla",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.PUT}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

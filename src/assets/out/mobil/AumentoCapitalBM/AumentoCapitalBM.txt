@@ -1,0 +1,53 @@
+new()
+{
+    Input="/AumentoCapitalBM/AumentoCapitalPlazoFijoPropio",
+    To="/api/AumentoCapitalBM/AumentoCapitalPlazoFijoPropio",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/AumentoCapitalBM/AumentoCapitalPlazoFijoTercero",
+    To="/api/AumentoCapitalBM/AumentoCapitalPlazoFijoTercero",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/AumentoCapitalBM/ConfirmarAumentoPlazoFijo",
+    To="/api/AumentoCapitalBM/ConfirmarAumentoPlazoFijo",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/AumentoCapitalBM/ConstanciaAumentoPlazoFijo",
+    To="/api/AumentoCapitalBM/ConstanciaAumentoPlazoFijo",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

@@ -1,0 +1,14 @@
+new()
+{
+    Input="/GeneraCCI",
+    To="/api/GeneraCCI",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}

@@ -1,0 +1,79 @@
+new()
+{
+    Input="/Retanqueo/ConsultarCreditosRetanquear",
+    To="/api/Retanqueo/ConsultarCreditosRetanquear",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Retanqueo/ConsultarDetallePagoRetanqueo",
+    To="/api/Retanqueo/ConsultarDetallePagoRetanqueo",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Retanqueo/ConstanciaRetanqueoPrendario",
+    To="/api/Retanqueo/ConstanciaRetanqueoPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Retanqueo/ConsultarDetalleProductoRetanqueoPrendario",
+    To="/api/Retanqueo/ConsultarDetalleProductoRetanqueoPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Retanqueo/ConfirmarDetallePagoRetanqueo",
+    To="/api/Retanqueo/ConfirmarDetallePagoRetanqueo",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.GET}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+},new()
+{
+    Input="/Retanqueo/RegistrarRetanqueoPrendario",
+    To="/api/Retanqueo/RegistrarRetanqueoPrendario",
+    Methods=DeclaredMethods.GetHttpMethods(new[] {Method.POST}),
+    AuthIsRequired=true,
+    HasProtectedMetadata=true,
+    
+    ProtectedMetadataValue =
+    {
+        {"UserData", "CMaynasAPI"}
+    }
+    
+}
