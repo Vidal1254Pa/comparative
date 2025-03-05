@@ -1,0 +1,2894 @@
+{
+  "Routes": [
+
+    {
+      "DownstreamPathTemplate": "/api/Auth/Login",
+      "UpstreamPathTemplate": "/Token/Login",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ValidaIngreso",
+      "UpstreamPathTemplate": "/Auth/ValidaIngreso",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/CerrarSesion",
+      "UpstreamPathTemplate": "/Auth/CerrarSesion",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ObtenerDatosPorTarjeta",
+      "UpstreamPathTemplate": "/Auth/ObtenerDatosPorTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ObtnerLLave",
+      "UpstreamPathTemplate": "/Auth/ObtnerLLave",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ObtenerKeyRegistraOlvCont",
+      "UpstreamPathTemplate": "/Auth/ObtenerKeyRegistraOlvCont",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/DetalleCliente",
+      "UpstreamPathTemplate": "/Auth/DetalleCliente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/AfiliaBancaMovil",
+      "UpstreamPathTemplate": "/Auth/AfiliaBancaMovil",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ListarConstAfiliaBancaMovil",
+      "UpstreamPathTemplate": "/Auth/ListarConstAfiliaBancaMovil",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraOlvideContrasena",
+      "UpstreamPathTemplate": "/Auth/RegistraOlvideContrasena",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraOlvideContrasena",
+      "UpstreamPathTemplate": "/NAuth/RegistraOlvideContrasena",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraOlvideContrasena",
+      "UpstreamPathTemplate": "/Products/CambioClaveWeb",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ValidaTarjetaValida",
+      "UpstreamPathTemplate": "/Auth/ValidaTarjetaValida",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ValidaTarjetaValida",
+      "UpstreamPathTemplate": "/Products/ValidarTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/VerificarPin",
+      "UpstreamPathTemplate": "/Auth/VerificarPin",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ListarCamposSolicitud",
+      "UpstreamPathTemplate": "/ListarCamposSolicitud",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_WEBPAGE}",
+          "Port": "{SRVDESAPI_WEBPAGE_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/GenerandoClaveWebSicmacm",
+      "UpstreamPathTemplate": "/Auth/GenerandoClaveWebSicmacm",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/HuellaDigital/RegistrarOperacionHuellaDigital",
+      "UpstreamPathTemplate": "/Product/HuellaDigital/RegistrarOperacionHuellaDigital",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/HuellaDigital/ActualizarOperacionHuellaDigital",
+      "UpstreamPathTemplate": "/Product/HuellaDigital/ActualizarOperacionHuellaDigital",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/InformacionParaTi/InformacionParaTi",
+      "UpstreamPathTemplate": "/Product/InformacionParaTi/InformacionParaTi",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/DetalleTarjeta",
+      "UpstreamPathTemplate": "/Auth/DetalleTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ListarConstantesAL",
+      "UpstreamPathTemplate": "/Auth/ListarConstantesAL",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Auth/ListarTipoBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Auth/ListarTipoBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ListarMotivoBloqueo",
+      "UpstreamPathTemplate": "/Auth/ListarMotivoBloqueo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Auth/RegistraBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ConstanciaBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Auth/ConstanciaBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_AUTHEN}",
+          "Port": "{SRVDESAPI_AUTHEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultarTipoCambio",
+      "UpstreamPathTemplate": "/Product/ConsultarTipoCambio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultarMisCuentas",
+      "UpstreamPathTemplate": "/Product/ConsultarMisCuentas",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultarMisSeguros",
+      "UpstreamPathTemplate": "/Product/ConsultarMisSeguros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultSaldoDispCuentas",
+      "UpstreamPathTemplate": "/Product/ConsultSaldoDispCuentas",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultDetCtaAhorro",
+      "UpstreamPathTemplate": "/Product/ConsultDetCtaAhorro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultDetMisCuentas",
+      "UpstreamPathTemplate": "/Product/ConsultDetCtaAhorros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultMisMovimientos",
+      "UpstreamPathTemplate": "/Product/ConsultMisMovimientos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultMisMovimPend",
+      "UpstreamPathTemplate": "/Product/ConsultMisMovimPend",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultInfMisCredts",
+      "UpstreamPathTemplate": "/Product/ConsultInfMisCredts",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultDetMisCredts",
+      "UpstreamPathTemplate": "/Product/ConsultDetMisCredts",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultCronogPagos",
+      "UpstreamPathTemplate": "/Product/ConsultCronogPagos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultCredPrend",
+      "UpstreamPathTemplate": "/Product/ConsultCredPrend",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/ConsultDetMisSeg",
+      "UpstreamPathTemplate": "/Product/ConsultDetMisSeg",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/SeleccUbiAgente",
+      "UpstreamPathTemplate": "/Product/SeleccUbiAgente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Microseguro/ConsultarConstantesSeguros",
+      "UpstreamPathTemplate": "/Microseguro/ConsultarConstantesSeguros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoWeb/Carrera/ListarConstantesPagoWeb",
+      "UpstreamPathTemplate": "/Products/Solicitud/ListarMotivosCancelacion",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_WEBPAGE}",
+          "Port": "{SRVDESAPI_WEBPAGE_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Microseguro/ConsultarMontoPrimaSeguros",
+      "UpstreamPathTemplate": "/Microseguro/ConsultarMontoPrimaSeguros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Microseguro/RegistraSolAfiliacionSepelio",
+      "UpstreamPathTemplate": "/Microseguro/RegistraSolAfiliacionSepelio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Microseguro/ConstanciaRegistroSegSepelio",
+      "UpstreamPathTemplate": "/Microseguro/ConstanciaRegistroSegSepelio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Microseguro/RegistraSolAfiliacionTarjeta",
+      "UpstreamPathTemplate": "/Microseguro/RegistraSolAfiliacionTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Microseguro/ConstanciaRegistroTarjeta",
+      "UpstreamPathTemplate": "/Microseguro/ConstanciaRegistroTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConsultarTpoProdCred",
+      "UpstreamPathTemplate": "/Solicitud/ConsultarTpoProdCred",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConsultarDetalleTpoProdCred",
+      "UpstreamPathTemplate": "/Solicitud/ConsultarDetalleTpoProdCred",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/RegistrarSolicitudCredito",
+      "UpstreamPathTemplate": "/Solicitud/RegistrarSolicitudCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaRegistroCredSolicitud",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaRegistroCredSolicitud",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/SeguimientoRegistroCredSolicitud",
+      "UpstreamPathTemplate": "/Solicitud/SeguimientoRegistroCredSolicitud",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ListarConstanteConfigTajeta",
+      "UpstreamPathTemplate": "/Config/ListarConstanteConfigTajeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConfirmarActUsoExtranjero",
+      "UpstreamPathTemplate": "/Config/ConfirmarActUsoExtranjero",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/RegistrarConfigTarjeta",
+      "UpstreamPathTemplate": "/Config/RegistrarConfigTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConstanciaConfigtarjeta",
+      "UpstreamPathTemplate": "/Config/ConstanciaConfigtarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConfirmarComprasInternet",
+      "UpstreamPathTemplate": "/Config/ConfirmarComprasInternet",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConfirmarBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Config/ConfirmarBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/RegistrarBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Config/RegistrarBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConstanciaBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Config/ConstanciaBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ListarConfigLimites",
+      "UpstreamPathTemplate": "/Config/ListarConfigLimites",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConfigLimites",
+      "UpstreamPathTemplate": "/Config/ConfigLimites",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ListarConstConfigLimites",
+      "UpstreamPathTemplate": "/Config/ListarConstConfigLimites",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConfirmacionDebitoAutomatico",
+      "UpstreamPathTemplate": "/Solicitud/ConfirmacionDebitoAutomatico",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/RegDebitoAutomatico",
+      "UpstreamPathTemplate": "/Solicitud/RegDebitoAutomatico",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaRegistroDebitoAut",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaRegistroDebitoAut",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ListarRegistroDebitoAut",
+      "UpstreamPathTemplate": "/Solicitud/ListarRegistroDebitoAut",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/RegDesafilDebitoAutomatico",
+      "UpstreamPathTemplate": "/Solicitud/RegDesafilDebitoAutomatico",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaRegistroDesafilDebitoAut",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaRegistroDesafilDebitoAut",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/VerDatosTarjeta",
+      "UpstreamPathTemplate": "/Product/VerDatosTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/GenerarCVV",
+      "UpstreamPathTemplate": "/Token/GenerarCVV",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ListarCondicionesCancelacionSeguros",
+      "UpstreamPathTemplate": "/Solicitud/ListarCondicionesCancelacionSeguros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ListarAfiliacionesSeguros",
+      "UpstreamPathTemplate": "/Solicitud/ListarAfiliacionesSeguros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConfirmarCancelacionSeguros",
+      "UpstreamPathTemplate": "/Solicitud/ConfirmarCancelacionSeguros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/RegDesafilSeguros",
+      "UpstreamPathTemplate": "/Solicitud/RegDesafilSeguros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaDesafilSeguro",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaDesafilSeguro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ListarCondicionesCancelarCredito",
+      "UpstreamPathTemplate": "/Solicitud/ListarCondicionesCancelarCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConfirmarCancelarCredito",
+      "UpstreamPathTemplate": "/Solicitud/ConfirmarCancelarCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/CancelarCredito",
+      "UpstreamPathTemplate": "/Solicitud/CancelarCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaCancelarCredito",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaCancelarCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/RegistrarServNotif",
+      "UpstreamPathTemplate": "/Config/RegistrarServNotif",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConstanciaRegistroNotif",
+      "UpstreamPathTemplate": "/Config/ConstanciaRegistroNotif",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ListarOperFrecuentes",
+      "UpstreamPathTemplate": "/Config/ListarOperFrecuentes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/RegistrarOperFrecuente",
+      "UpstreamPathTemplate": "/Config/RegistrarOperFrecuente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/EliminarOperFrecuente",
+      "UpstreamPathTemplate": "/Config/EliminarOperFrecuente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/AperturaCuentaAhorro",
+      "UpstreamPathTemplate": "/Product/Apertura/AperturaCuentaAhorro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/ConstanciaAperturaAhorro",
+      "UpstreamPathTemplate": "/Product/Apertura/ConstanciaAperturaAhorro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/ResumenOperacionAperturaAhorro",
+      "UpstreamPathTemplate": "/Product/Apertura/ResumenOperacionAperturaAhorro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/PlazofijoDias",
+      "UpstreamPathTemplate": "/Product/Apertura/PlazofijoDias",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/PlazofijoProductos",
+      "UpstreamPathTemplate": "/Product/Apertura/PlazofijoProductos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/PlazofijoMoneda",
+      "UpstreamPathTemplate": "/Product/Apertura/PlazofijoMoneda",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/TipoRetiroInteres",
+      "UpstreamPathTemplate": "/Product/Apertura/TipoRetiroInteres",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/CalcularsimuladorAhorroPlazo",
+      "UpstreamPathTemplate": "/Product/Apertura/CalcularsimuladorAhorroPlazo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/ConfirmarAhorroPlazoFijo",
+      "UpstreamPathTemplate": "/Product/Apertura/ConfirmarAhorroPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/AbrirCuentaPlazoFijo",
+      "UpstreamPathTemplate": "/Product/Apertura/AbrirCuentaPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Apertura/ConstanciaPlazoFijo",
+      "UpstreamPathTemplate": "/Product/Apertura/ConstanciaPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/Actualizacion/ListarDatosCliente",
+      "UpstreamPathTemplate": "/Product/Actualizacion/ListarDatosCliente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Product/Actualizacion/ActualizarDatosCliente",
+      "UpstreamPathTemplate": "/Product/Actualizacion/ActualizarDatosCliente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/CancelacionAhorro",
+      "UpstreamPathTemplate": "/Solicitud/CancelacionAhorro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaCancelacionAhorro",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaCancelacionAhorro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/CancelacionPlazoFijo",
+      "UpstreamPathTemplate": "/Solicitud/CancelacionPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaCancelacionPlazoFijo",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaCancelacionPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ResumenCancelacionPlazoFijo",
+      "UpstreamPathTemplate": "/Solicitud/ResumenCancelacionPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConsultarReclamo",
+      "UpstreamPathTemplate": "/Solicitud/ConsultarReclamo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ListarReclamos",
+      "UpstreamPathTemplate": "/Solicitud/ListarReclamos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarGarantiasPlazoFijo",
+      "UpstreamPathTemplate": "/Rapiflash/ConsultarGarantiasPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarFechasDePago",
+      "UpstreamPathTemplate": "/Rapiflash/ConsultarFechasDePago",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarDetalleProductoRapiflash",
+      "UpstreamPathTemplate": "/Rapiflash/ConsultarDetalleProductoRapiflash",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarDetallePrevioRapiflash",
+      "UpstreamPathTemplate": "/Rapiflash/ConsultarDetallePrevioRapiflash",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConstanciaCreditoRapiflash",
+      "UpstreamPathTemplate": "/Rapiflash/ConstanciaCreditoRapiflash",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/RegistrarCreditoRapiflash",
+      "UpstreamPathTemplate": "/Rapiflash/RegistrarCreditoRapiflash",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarDetalleProductos",
+      "UpstreamPathTemplate": "/Product/ConsultarDetalleProductos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConsultarCreditosRetanquear",
+      "UpstreamPathTemplate": "/Retanqueo/ConsultarCreditosRetanquear",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConsultarDetallePagoRetanqueo",
+      "UpstreamPathTemplate": "/Retanqueo/ConsultarDetallePagoRetanqueo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConstanciaRetanqueoPrendario",
+      "UpstreamPathTemplate": "/Retanqueo/ConstanciaRetanqueoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConsultarDetalleProductoRetanqueoPrendario",
+      "UpstreamPathTemplate": "/Retanqueo/ConsultarDetalleProductoRetanqueoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConfirmarDetallePagoRetanqueo",
+      "UpstreamPathTemplate": "/Retanqueo/ConfirmarDetallePagoRetanqueo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/RegistrarRetanqueoPrendario",
+      "UpstreamPathTemplate": "/Retanqueo/RegistrarRetanqueoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_PRODUCTS}",
+          "Port": "{SRVDESAPI_PRODUCTS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/ConfirmacionTranfCMAC",
+      "UpstreamPathTemplate": "/Transf/ConfirmacionTranfCMAC",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/TransfCtasPropias",
+      "UpstreamPathTemplate": "/Transf/TransfCtasPropias",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/TransfCtasOtrosClientes",
+      "UpstreamPathTemplate": "/Transf/TransfCtasOtrosClientes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/ConstanciaTransCMAC",
+      "UpstreamPathTemplate": "/Transf/ConstanciaTransCMAC",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/ConfirmacionTranfOtrosBancos",
+      "UpstreamPathTemplate": "/Transf/ConfirmacionTranfOtrosBancos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/TransfCtasOtrosBancos",
+      "UpstreamPathTemplate": "/Transf/TransfCtasOtrosBancos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/ConstanciaTransOtrosBancos",
+      "UpstreamPathTemplate": "/Transf/ConstanciaTransOtrosBancos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ListarOperacionesFrecuentes",
+      "UpstreamPathTemplate": "/BancaMovil/ListarOperacionesFrecuentes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_EMPRESA}",
+          "Port": "{SRVDESAPI_EMPRESA_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/ListarDocumentoTipo",
+      "UpstreamPathTemplate": "/Giros/ListarDocumentoTipo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/ListarDocumentoTipo",
+      "UpstreamPathTemplate": "/Product/ListarConstantes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/ListarDocumentoTipo2",
+      "UpstreamPathTemplate": "/Product/ListarConstantes2",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/ResumenOperacion",
+      "UpstreamPathTemplate": "/Giros/ResumenOperacion",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/PagarGiro",
+      "UpstreamPathTemplate": "/Giros/PagarGiro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ConsultarDeuda",
+      "UpstreamPathTemplate": "/Servicio/ConsultarDeuda",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ListarServicio",
+      "UpstreamPathTemplate": "/Servicio/ListarServicio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ListarCategoria",
+      "UpstreamPathTemplate": "/Servicio/ListarCategoria",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ConsultarTipoPago",
+      "UpstreamPathTemplate": "/Servicio/ConsultarTipoPago",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/PagarServicio",
+      "UpstreamPathTemplate": "/Servicio/PagarServicio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/AumentoCapitalBM/AumentoCapitalPlazoFijoPropio",
+      "UpstreamPathTemplate": "/AumentoCapitalBM/AumentoCapitalPlazoFijoPropio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/AumentoCapitalBM/AumentoCapitalPlazoFijoTercero",
+      "UpstreamPathTemplate": "/AumentoCapitalBM/AumentoCapitalPlazoFijoTercero",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/GetDetalleCuotaPendiente",
+      "UpstreamPathTemplate": "/PagoCreditoBM/GetDetalleCuotaPendiente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/PagoCuotaCreditosotros",
+      "UpstreamPathTemplate": "/PagoCreditoBM/PagoCuotaCreditosotros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/PagoCuotaCreditosPropios",
+      "UpstreamPathTemplate": "/PagoCreditoBM/PagoCuotaCreditosPropios",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ListarConstanciaPagoCredito",
+      "UpstreamPathTemplate": "/PagoCreditoBM/ListarConstanciaPagoCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConfirmacionPagoCreditosPropio",
+      "UpstreamPathTemplate": "/PagoCreditoBM/ConfirmacionPagoCreditosPropio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConfirmacionPagoCreditosTercero",
+      "UpstreamPathTemplate": "/PagoCreditoBM/ConfirmacionPagoCreditosTercero",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConsultarDeudaPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBM/ConsultarDeudaPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/RenovarCreditoPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBM/RenovarCreditoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConstanciaRenovacionPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBM/ConstanciaRenovacionPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/AumentoCapitalBM/ConfirmarAumentoPlazoFijo",
+      "UpstreamPathTemplate": "/AumentoCapitalBM/ConfirmarAumentoPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/AumentoCapitalBM/ConstanciaAumentoPlazoFijo",
+      "UpstreamPathTemplate": "/AumentoCapitalBM/ConstanciaAumentoPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ConstanciaPagoRecaudo",
+      "UpstreamPathTemplate": "/Servicio/ConstanciaPagoRecaudo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TRANSACTIONS}",
+          "Port": "{SRVDESAPI_TRANSACTIONS_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/2FA",
+      "UpstreamPathTemplate": "/Token/2FA",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/CheckAfiliado",
+      "UpstreamPathTemplate": "/Token/CheckAfiliado",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/GenerarOTP",
+      "UpstreamPathTemplate": "/Token/GenerarOTP",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/AfiliarTokenDigital",
+      "UpstreamPathTemplate": "/Token/AfiliarTokenDigital",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/RegOpeTokenDigital",
+      "UpstreamPathTemplate": "/Token/RegOpeTokenDigital",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/UpdTokenDigDes",
+      "UpstreamPathTemplate": "/Token/UpdTokenDigDes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/UpdTokenDigAct",
+      "UpstreamPathTemplate": "/Token/UpdTokenDigAct",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/GuardarSMS",
+      "UpstreamPathTemplate": "/Token/GuardarSMS",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/ConfirmarSMS",
+      "UpstreamPathTemplate": "/Token/ConfirmarSMS",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Email/GetDoc",
+      "UpstreamPathTemplate": "/Email/GetDoc",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_NOTI}",
+          "Port": "{SRVDESAPI_NOTI_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Buzon/VerMensajes",
+      "UpstreamPathTemplate": "/Buzon/VerMensajes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_NOTI}",
+          "Port": "{SRVDESAPI_NOTI_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Buzon/EnviarMensajeBuzon",
+      "UpstreamPathTemplate": "/Buzon/EnviarMensajeBuzon",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_NOTI}",
+          "Port": "{SRVDESAPI_NOTI_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Buzon/VerMensajesDetalle",
+      "UpstreamPathTemplate": "/Buzon/VerMensajesDetalle",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_NOTI}",
+          "Port": "{SRVDESAPI_NOTI_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Docs/maynasdoc",
+      "UpstreamPathTemplate": "/Docs/maynasdoc",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_NOTI}",
+          "Port": "{SRVDESAPI_NOTI_PORT}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Email/EnviarEmail",
+      "UpstreamPathTemplate": "/Email/EnviarEmail",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_NOTI}",
+          "Port": "{SRVDESAPI_NOTI_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Email/EnviarConstanciaTokenAgencia",
+      "UpstreamPathTemplate": "/Email/EnviarConstanciaTokenAgencia",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_NOTI}",
+          "Port": "{SRVDESAPI_NOTI_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoWeb/Carrera/ListarConstantesPagoWeb",
+      "UpstreamPathTemplate": "/Products/Actualizacion/ListarOperador",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_WEBPAGE}",
+          "Port": "{SRVDESAPI_WEBPAGE_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/EnviarSMS",
+      "UpstreamPathTemplate": "/EnviarSMS",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "{SRVDESAPI_TOKEN}",
+          "Port": "{SRVDESAPI_TOKEN_PORT}"
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:2638"
+  }
+}
+

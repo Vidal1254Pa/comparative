@@ -1,0 +1,2396 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Token/CheckAfiliado",
+      "UpstreamPathTemplate": "/Token/CheckAfiliado",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ValidaIngreso",
+      "UpstreamPathTemplate": "/Auth/ValidaIngreso",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ObtnerLLaveBIE",
+      "UpstreamPathTemplate": "/Auth/ObtnerLLaveBIE",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ActualizarPerfilUsuario",
+      "UpstreamPathTemplate": "/Admin/ActualizarPerfilUsuario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/AfiliaBancaMovil",
+      "UpstreamPathTemplate": "/Auth/AfiliaBancaWeb",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoWeb/Carrera/ListarConstantesPagoWeb",
+      "UpstreamPathTemplate": "/ListarContactanos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2003
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ListarConstAfiliaBancaMovil",
+      "UpstreamPathTemplate": "/Auth/ListarConstAfiliaBancaWeb",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraOlvideContrasena",
+      "UpstreamPathTemplate": "/Auth/RegistraOlvideContrasena",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraOlvideContrasena",
+      "UpstreamPathTemplate": "/Products/CambioClaveWeb",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ListarDatosPerfil",
+      "UpstreamPathTemplate": "/Auth/ListarDatosPerfil",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ValidaTarjetaValida",
+      "UpstreamPathTemplate": "/Products/ValidarTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraOlvideContraseña",
+      "UpstreamPathTemplate": "/Auth/RegistraOlvideContraseña",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ValidaIngresoBancaWebEmpresa",
+      "UpstreamPathTemplate": "/Auth/ValidaIngresoBancaWebEmpresa",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ObtenerKeyRegistraOlvContBIE",
+      "UpstreamPathTemplate": "/Auth/ObtenerKeyRegistraOlvContBIE",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ConsultarUltimaSesionBIE",
+      "UpstreamPathTemplate": "/Auth/ConsultarUltimaSesionBIE",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraCambiarContrasenaBW",
+      "UpstreamPathTemplate": "/Auth/RegistraCambiarContrasenaBW",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/RegistraCambiarContrasenaBIE",
+      "UpstreamPathTemplate": "/Auth/RegistraCambiarContrasenaBIE",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/ConstanciaCambioClaveBW",
+      "UpstreamPathTemplate": "/Auth/ConstanciaCambioClaveBW",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2000
+        }
+      ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Operador/RegistrarSolicitud",
+      "UpstreamPathTemplate": "/Operador/RegistrarSolicitud",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Apertura/ListarConstantes",
+      "UpstreamPathTemplate": "/Usuarios/ListarConstantes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2003
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ListarOperacionesFrecuentes",
+      "UpstreamPathTemplate": "/BancaWeb/ListarOperacionesFrecuentes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/VerDatosTarjeta",
+      "UpstreamPathTemplate": "/Product/VerDatosTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Config/ActualizarOperFrecuente",
+      "UpstreamPathTemplate": "/Config/ActualizarOperFrecuente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/TransfCtasOtrosClientes",
+      "UpstreamPathTemplate": "/Transf/TransfCtasOtrosClientes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/ConfirmacionTranfOtrosBancos",
+      "UpstreamPathTemplate": "/Transf/ConfirmacionTranfOtrosBancos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/TransfCtasOtrosBancos",
+      "UpstreamPathTemplate": "/Transf/TransfCtasOtrosBancos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/ConstanciaTransOtrosBancos",
+      "UpstreamPathTemplate": "/Transf/ConstanciaTransOtrosBancos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/GetDetalleCuotaPendiente",
+      "UpstreamPathTemplate": "/PagoCreditoBM/GetDetalleCuotaPendiente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/PagoCuotaCreditosotros",
+      "UpstreamPathTemplate": "/PagoCreditoBM/PagoCuotaCreditosotros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConfirmacionPagoCreditosPropio",
+      "UpstreamPathTemplate": "/PagoCreditoBW/ConfirmacionPagoCreditosPropio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConfirmacionPagoCreditosTercero",
+      "UpstreamPathTemplate": "/PagoCreditoBW/ConfirmacionPagoCreditosTercero",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/PagoCuotaCreditosPropios",
+      "UpstreamPathTemplate": "/PagoCreditoBM/PagoCuotaCreditosPropios",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ListarConstanciaPagoCredito",
+      "UpstreamPathTemplate": "/PagoCreditoBM/ListarConstanciaPagoCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConsultarDeudaPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBM/ConsultarDeudaPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/RenovarCreditoPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBM/RenovarCreditoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConstanciaRenovacionPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBM/ConstanciaRenovacionPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConsultarTpoProdCred",
+      "UpstreamPathTemplate": "/Solicitud/ConsultarTpoProdCred",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaRegistroDesafilDebitoAut",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaRegistroDesafilDebitoAut",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ListarRegistroDebitoAut",
+      "UpstreamPathTemplate": "/Solicitud/ListarRegistroDebitoAut",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/RegDesafilDebitoAutomatico",
+      "UpstreamPathTemplate": "/Solicitud/RegDesafilDebitoAutomatico",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConsultarDetalleTpoProdCred",
+      "UpstreamPathTemplate": "/Solicitud/ConsultarDetalleTpoProdCred",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/RegistrarSolicitudCredito",
+      "UpstreamPathTemplate": "/Solicitud/RegistrarSolicitudCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConstanciaRegistroCredSolicitud",
+      "UpstreamPathTemplate": "/Solicitud/ConstanciaRegistroCredSolicitud",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/SeguimientoRegistroCredSolicitud",
+      "UpstreamPathTemplate": "/Solicitud/SeguimientoRegistroCredSolicitud",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ListarConstanteConfigTajeta",
+      "UpstreamPathTemplate": "/Config/ListarConstanteConfigTajeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConfirmarActUsoExtranjero",
+      "UpstreamPathTemplate": "/Config/ConfirmarActUsoExtranjero",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/RegistrarConfigTarjeta",
+      "UpstreamPathTemplate": "/Config/RegistrarConfigTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConstanciaConfigtarjeta",
+      "UpstreamPathTemplate": "/Config/ConstanciaConfigtarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConfirmarComprasInternet",
+      "UpstreamPathTemplate": "/Config/ConfirmarComprasInternet",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConfirmarBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Config/ConfirmarBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/RegistrarBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Config/RegistrarBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConstanciaBloqueoTarjeta",
+      "UpstreamPathTemplate": "/Config/ConstanciaBloqueoTarjeta",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ListarConfigLimites",
+      "UpstreamPathTemplate": "/Config/ListarConfigLimites",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ConfigLimites",
+      "UpstreamPathTemplate": "/Config/ConfigLimites",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Config/ListarConstConfigLimites",
+      "UpstreamPathTemplate": "/Config/ListarConstConfigLimites",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ListarCondicionesCancelacionSeguros",
+      "UpstreamPathTemplate": "/Solicitud/ListarCondicionesCancelacionSeguros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ResumenCancelacionPlazoFijo",
+      "UpstreamPathTemplate": "/Solicitud/ResumenCancelacionPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ConsultarReclamo",
+      "UpstreamPathTemplate": "/Solicitud/ConsultarReclamo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Solicitud/ListarReclamos",
+      "UpstreamPathTemplate": "/Solicitud/ListarReclamos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarGarantiasPlazoFijo",
+      "UpstreamPathTemplate": "/Rapiflash/ConsultarGarantiasPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarFechasDePago",
+      "UpstreamPathTemplate": "/Rapiflash/ConsultarFechasDePago",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarDetalleProductoRapiflash",
+      "UpstreamPathTemplate": "/Rapiflash/ConsultarDetalleProductoRapiflash",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarDetalleProductos",
+      "UpstreamPathTemplate": "/Product/ConsultarDetalleProductos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConsultarDetallePrevioRapiflash",
+      "UpstreamPathTemplate": "/Rapiflash/ConsultarDetallePrevioRapiflash",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/ConstanciaCreditoRapiflash",
+      "UpstreamPathTemplate": "/Rapiflash/ConstanciaCreditoRapiflash",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Rapiflash/RegistrarCreditoRapiflash",
+      "UpstreamPathTemplate": "/Rapiflash/RegistrarCreditoRapiflash",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConsultarCreditosRetanquear",
+      "UpstreamPathTemplate": "/Retanqueo/ConsultarCreditosRetanquear",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConsultarDetallePagoRetanqueo",
+      "UpstreamPathTemplate": "/Retanqueo/ConsultarDetallePagoRetanqueo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConstanciaRetanqueoPrendario",
+      "UpstreamPathTemplate": "/Retanqueo/ConstanciaRetanqueoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/ConsultarDetalleProductoRetanqueoPrendario",
+      "UpstreamPathTemplate": "/Retanqueo/ConsultarDetalleProductoRetanqueoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Retanqueo/RegistrarRetanqueoPrendario",
+      "UpstreamPathTemplate": "/Retanqueo/RegistrarRetanqueoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2001
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/ConfirmacionTranfCMAC",
+      "UpstreamPathTemplate": "/Transf/ConfirmacionTranfCMAC",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/TransfCtasPropias",
+      "UpstreamPathTemplate": "/Transf/TransfCtasPropias",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Transf/ConstanciaTransCMAC",
+      "UpstreamPathTemplate": "/Transf/ConstanciaTransCMAC",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/ListarDocumentoTipo",
+      "UpstreamPathTemplate": "/Giros/ListarDocumentoTipo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/ResumenOperacion",
+      "UpstreamPathTemplate": "/Giros/ResumenOperacion",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/PagarGiro",
+      "UpstreamPathTemplate": "/Giros/PagarGiro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ConsultarDeuda",
+      "UpstreamPathTemplate": "/Servicio/ConsultarDeuda",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ListarServicio",
+      "UpstreamPathTemplate": "/Servicio/ListarServicio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ListarCategoria",
+      "UpstreamPathTemplate": "/Servicio/ListarCategoria",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ConsultarTipoPago",
+      "UpstreamPathTemplate": "/Servicio/ConsultarTipoPago",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/PagarServicio",
+      "UpstreamPathTemplate": "/Servicio/PagarServicio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/AumentoCapitalBM/AumentoCapitalPlazoFijoPropio",
+      "UpstreamPathTemplate": "/AumentoCapitalBW/AumentoCapitalPlazoFijoPropio",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/AumentoCapitalBM/AumentoCapitalPlazoFijoTercero",
+      "UpstreamPathTemplate": "/AumentoCapitalBW/AumentoCapitalPlazoFijoTercero",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/GetDetalleCuotaPendiente",
+      "UpstreamPathTemplate": "/PagoCreditoBW/GetDetalleCuotaPendiente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/GetDetalleCuotaPendiente",
+      "UpstreamPathTemplate": "/GetDetalleCuotaPendiente",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/PagoCuotaCreditosotros",
+      "UpstreamPathTemplate": "/PagoCreditoBW/PagoCuotaCreditosotros",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/PagoCuotaCreditosPropios",
+      "UpstreamPathTemplate": "/PagoCreditoBW/PagoCuotaCreditosPropios",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ListarConstanciaPagoCredito",
+      "UpstreamPathTemplate": "/PagoCreditoBW/ListarConstanciaPagoCredito",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConsultarDeudaPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBW/ConsultarDeudaPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/RenovarCreditoPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBW/RenovarCreditoPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCreditoBM/ConstanciaRenovacionPrendario",
+      "UpstreamPathTemplate": "/PagoCreditoBW/ConstanciaRenovacionPrendario",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/AumentoCapitalBM/ConfirmarAumentoPlazoFijo",
+      "UpstreamPathTemplate": "/AumentoCapitalBW/ConfirmarAumentoPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/AumentoCapitalBM/ConstanciaAumentoPlazoFijo",
+      "UpstreamPathTemplate": "/AumentoCapitalBW/ConstanciaAumentoPlazoFijo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Servicio/ConstanciaPagoRecaudo",
+      "UpstreamPathTemplate": "/Servicio/ConstanciaPagoRecaudo",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/2FA",
+      "UpstreamPathTemplate": "/Token/2FA",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/GenerarOTP",
+      "UpstreamPathTemplate": "/Token/GenerarOTP",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/AfiliarTokenDigital",
+      "UpstreamPathTemplate": "/Token/AfiliarTokenDigital",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/RegOpeTokenDigital",
+      "UpstreamPathTemplate": "/Token/RegOpeTokenDigital",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/UpdTokenDigDes",
+      "UpstreamPathTemplate": "/Token/UpdTokenDigDes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/UpdTokenDigAct",
+      "UpstreamPathTemplate": "/Token/UpdTokenDigAct",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/GuardarSMS",
+      "UpstreamPathTemplate": "/Token/GuardarSMS",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/ConfirmarSMS",
+      "UpstreamPathTemplate": "/Token/ConfirmarSMS",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Buzon/VerMensajes",
+      "UpstreamPathTemplate": "/Buzon/VerMensajes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2004
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Email/GetDoc",
+      "UpstreamPathTemplate": "/Email/GetDoc",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2004
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Buzon/EnviarMensajeBuzon",
+      "UpstreamPathTemplate": "/Buzon/EnviarMensajeBuzon",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2004
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Buzon/VerMensajesDetalle",
+      "UpstreamPathTemplate": "/Buzon/VerMensajesDetalle",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2004
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoProveedor/PagoProveedorIngresarDatos",
+      "UpstreamPathTemplate": "/PagoProveedor/PagoProveedorIngresarDatos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoProveedor/VerArchivoPagoProveedor",
+      "UpstreamPathTemplate": "/PagoProveedor/VerArchivoPagoProveedor",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoProveedor/ConfirmarPagoProveedor",
+      "UpstreamPathTemplate": "/PagoProveedor/ConfirmarPagoProveedor",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoProveedor/download/{fileName}",
+      "UpstreamPathTemplate": "/api/PagoProveedor/download/{fileName}",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoPlanilla/PagoPlanillaIngresarDatos",
+      "UpstreamPathTemplate": "/PagoPlanilla/PagoPlanillaIngresarDatos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoPlanilla/VerArchivoPagoPlanillaTrabajador",
+      "UpstreamPathTemplate": "/PagoPlanilla/VerArchivoPagoPlanillaTrabajador",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoPlanilla/ConfirmarPagoPlanilla",
+      "UpstreamPathTemplate": "/PagoPlanilla/ConfirmarPagoPlanilla",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoPlanilla/download/{fileName}",
+      "UpstreamPathTemplate": "/api/PagoPlanilla/download/{fileName}",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCTS/PagoCTSIngresarDatos",
+      "UpstreamPathTemplate": "/PagoCTS/PagoCTSIngresarDatos",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCTS/VerArchivoPagoCTS",
+      "UpstreamPathTemplate": "/PagoCTS/VerArchivoPagoCTS",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCTS/ConfirmarPagoCTS",
+      "UpstreamPathTemplate": "/PagoCTS/ConfirmarPagoCTS",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/PagoCTS/download/{fileName}",
+      "UpstreamPathTemplate": "/api/PagoCTS/download/{fileName}",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Email/EnviarEmail",
+      "UpstreamPathTemplate": "/Email/EnviarEmail",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2004
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Giros/ListarDocumentoTipo",
+      "UpstreamPathTemplate": "/Product/ListarConstantes",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2005
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/EnviarSMS",
+      "UpstreamPathTemplate": "/EnviarSMS",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2002
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ListarUsuariosoAut",
+      "UpstreamPathTemplate": "/Admin/ListarUsuariosoAut",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ListarMontosAutorizador",
+      "UpstreamPathTemplate": "/Admin/ListarMontosAutorizador",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ConfigLimitesBW",
+      "UpstreamPathTemplate": "/Admin/ConfigLimitesBW",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ConstanciaConfigLimitesBW",
+      "UpstreamPathTemplate": "/Admin/ConstanciaConfigLimitesBW",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ListarSolicitudesPerfil",
+      "UpstreamPathTemplate": "/Admin/ListarSolicitudesPerfil",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ListarUsuarios",
+      "UpstreamPathTemplate": "/Admin/ListarUsuarios",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/ConfirmarSolicitudesPerfil",
+      "UpstreamPathTemplate": "/Admin/ConfirmarSolicitudesPerfil",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/VerPerfil",
+      "UpstreamPathTemplate": "/Admin/VerPerfil",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/VerPerfil",
+      "UpstreamPathTemplate": "/Oper/VerPerfil",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/VerPerfil",
+      "UpstreamPathTemplate": "/Auto/VerPerfil",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Autorizador/ListaTipoRegistro",
+      "UpstreamPathTemplate": "/Autorizador/ListaTipoRegistro",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Autorizador/ListaAutorizaciones",
+      "UpstreamPathTemplate": "/Autorizador/ListaAutorizaciones",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Autorizador/ListarHistorialOper",
+      "UpstreamPathTemplate": "/Autorizador/ListarHistorialOper",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Autorizador/Autorizar",
+      "UpstreamPathTemplate": "/Autorizador/Autorizar",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Autorizador/ConstanciaOperacion",
+      "UpstreamPathTemplate": "/Autorizador/ConstanciaOperacion",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2007
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "UserData": "CMaynasAPI"
+      }
+
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:2640"
+  }
+}
+
